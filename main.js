@@ -14,11 +14,12 @@ i = 5.;
 function add_item() {
 
     i++;
-    document.getElementById("no").innerHTML = i;
+    document.getElementById("no").innerHTML += "<br>" + i;
+    //var num = document.getElementById("no").innerHTML = "<br>" + i;
     console.log(i);
     var ad_piz = document.getElementById("add_item").value;
 
 
     add.push(ad_piz);
-    document.getElementById("display_menu").innerHTML = document.getElementById("display_menu").innerHTML + ad_piz;
+    document.getElementById("display_menu").innerHTML = document.getElementById("display_menu").innerHTML + ad_piz + "<br>";
 }
